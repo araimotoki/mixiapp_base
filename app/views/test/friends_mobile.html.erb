@@ -1,0 +1,12 @@
+<h1>友達リスト</h1>
+
+<%= mobile_gadget_link_to "戻る", :action => :index %>
+
+<% current_owner.friends.each {|user| %>
+<p>
+<img src="<%= user.thumbnail_url %>" border="0"><br>
+owner_id: <%= user.owner_id %><br>
+nickname: <%= user.nickname %><br>
+has_app: <%= user.has_app %><br>
+</p>
+<% } %>

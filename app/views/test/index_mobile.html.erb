@@ -1,0 +1,7 @@
+<h1>TOP</h1>
+
+<ul>
+<li><%= mobile_gadget_link_to "プロフィール", :controller => :test, :action => :profile %></li>
+<li><%= mobile_gadget_link_to "友達リスト", :controller => :test, :action => :friends %></li>
+<li><a href="invite:friends?callback=<%=u "http://#{AppResources[:application_domain]}/test/friends_invited" %>">友達を招待</a></li>
+</ul>

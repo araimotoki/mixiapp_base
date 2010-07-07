@@ -1,0 +1,10 @@
+<h1>プロフィール</h1>
+
+<%= mobile_gadget_link_to "戻る", :action => :index %>
+
+<p>
+<img src="<%= current_owner.thumbnail_url %>" border="0"><br>
+id: <%= current_owner.id %><br>
+owner_id: <%= current_owner.owner_id %><br>
+nickname: <%= current_owner.nickname %><br>
+</p>
